@@ -5,8 +5,8 @@ ROS2 package for launching and visualizing the urdf of the leap hand grippers. O
 ## Dependencies
 This README assumes that you have the following ROS2 installation setup:
 
-    - Ubuntu Distro=="jammy"
-    - ROS2_DISTRO=="humble"
+    - Ubuntu Distro="jammy"
+    - ROS Distro="humble"
 
 ## Installation
 To install this package, perform the following steps:
