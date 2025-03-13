@@ -9,7 +9,7 @@ This README assumes that you have the following ROS2 installation setup:
 
 To install this package, perform the following steps:
 - Clone the repo in your ROS2 workspace folder.
-- Run `rosdep install --ignore-src --from-paths src -r -y --distro humble`
+- Run `rosdep install --from-paths src --ignore-src -r -y --rosdistro=humble`
 - Run `colcon build` (append `--packages-select leap_description` to your build command if you want to build just this package).
 - Source your workspace and ROS2 installation.
 - Run `ros2 launch leap_description view_gripper.launch.py`
