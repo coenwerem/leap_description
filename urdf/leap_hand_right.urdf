@@ -11,7 +11,7 @@
     <visual>
       <origin xyz="-0.0200 0.02575 -0.0347" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/palm_lower.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/palm_lower.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- palm_lower -->
@@ -84,7 +84,7 @@
     <visual>
       <origin xyz="0.0084 0.0077 0.01465" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/mcp_joint.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/mcp_joint.obj"/>
       </geometry>
     </visual>
     <collision>      <!-- mcp_joint -->
@@ -133,7 +133,7 @@
     <visual>
       <origin xyz="0.0096 0.0002 0.0007" rpy="-1.57079 -1.57079 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/pip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/pip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- pip -->
@@ -152,7 +152,7 @@
     <visual>
       <origin xyz="0.0211 -0.0084 0.0097" rpy="-3.1415926 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/dip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/dip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- dip -->
@@ -195,7 +195,7 @@
     <visual>
       <origin xyz="0.0132 -0.0061 0.0144" rpy="3.1415926 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/fingertip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/fingertip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- fingertip -->
@@ -219,7 +219,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/collision/white_tip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/collision/white_tip.obj"/>
       </geometry>
     </collision>
     <inertial>
@@ -229,7 +229,7 @@
     </inertial>
   </link>
 
-  <joint name="0" type="revolute">
+  <joint name="index_0" type="revolute">
     <origin xyz="-0.0122 0.03810 0.01450" rpy="-1.57079 0 1.57079"/>
     <parent link="mcp_joint"/>
     <child link="pip"/>
@@ -237,7 +237,7 @@
     <limit effort="0.95" velocity="8.48" lower="-1.047" upper="1.047"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="1" type="revolute">
+  <joint name="index_1" type="revolute">
     <origin xyz="-0.0070 0.0230 -0.0187" rpy="1.57079 1.57079 0"/>
     <parent link="palm_lower"/>
     <child link="mcp_joint"/>
@@ -245,7 +245,7 @@
     <limit effort="0.95" velocity="8.48" lower="-0.314" upper="2.23"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="2" type="revolute">
+  <joint name="index_2" type="revolute">
     <origin xyz="0.015 0.0143 -0.013" rpy="1.57079 -1.57079 0"/>
     <parent link="pip"/>
     <child link="dip"/>
@@ -253,7 +253,7 @@
     <limit effort="0.95" velocity="8.48" lower="-0.506" upper="1.885"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="3" type="revolute">
+  <joint name="index_3" type="revolute">
     <origin xyz="0 -0.0361 0.0002" rpy="0 0 0"/>
     <parent link="dip"/>
     <child link="fingertip"/>
@@ -265,7 +265,7 @@
     <visual>
       <origin xyz="0.0084 0.0077 0.01465" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/mcp_joint.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/mcp_joint.obj"/>
       </geometry>
     </visual>
     <collision>      <!-- mcp_joint -->
@@ -314,7 +314,7 @@
     <visual>
       <origin xyz="0.0096 0.0003 0.0007" rpy="-1.57079 -1.57079 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/pip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/pip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- pip -->
@@ -333,7 +333,7 @@
     <visual>
       <origin xyz="0.0211 -0.0084 0.0097" rpy="-3.14159 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/dip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/dip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- dip -->
@@ -376,7 +376,7 @@
     <visual>
       <origin xyz="0.0132 -0.0061 0.01450" rpy="3.14159 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/fingertip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/fingertip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- fingertip -->
@@ -400,7 +400,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/collision/white_tip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/collision/white_tip.obj"/>
       </geometry>
     </collision>
     <inertial>
@@ -409,7 +409,7 @@
       <inertia ixx="0.000003368" ixy="0.000000115" ixz="0" iyy="0.000001556" iyz="0" izz="0.000002863"/>
     </inertial>
   </link>
-  <joint name="4" type="revolute">
+  <joint name="middle_0" type="revolute">
     <origin xyz="-0.0122 0.0381 0.0145" rpy="-1.57079 0 1.57079"/>
     <parent link="mcp_joint_2"/>
     <child link="pip_2"/>
@@ -417,7 +417,7 @@
     <limit effort="0.95" velocity="8.48" lower="-1.047" upper="1.047"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="5" type="revolute">
+  <joint name="middle_1" type="revolute">
     <origin xyz="-0.0071 -0.0224 -0.0187" rpy="1.57079 1.57079 0"/>
     <parent link="palm_lower"/>
     <child link="mcp_joint_2"/>
@@ -425,7 +425,7 @@
     <limit effort="0.95" velocity="8.48" lower="-0.314" upper="2.23"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="6" type="revolute">
+  <joint name="middle_2" type="revolute">
     <origin xyz="0.015 0.0143 -0.013" rpy="1.57079 -1.57079 0"/>
     <parent link="pip_2"/>
     <child link="dip_2"/>
@@ -433,7 +433,7 @@
     <limit effort="0.95" velocity="8.48" lower="-0.506" upper="1.885"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="7" type="revolute">
+  <joint name="middle_3" type="revolute">
     <origin xyz="0 -0.0361 0.0002" rpy="0 0 0"/>
     <parent link="dip_2"/>
     <child link="fingertip_2"/>
@@ -445,7 +445,7 @@
     <visual>
       <origin xyz="0.0084 0.0077 0.01465" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/mcp_joint.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/mcp_joint.obj"/>
       </geometry>
     </visual>
     <collision>      <!-- mcp_joint -->
@@ -494,7 +494,7 @@
     <visual>
       <origin xyz="0.0096 0.0003 0.0007" rpy="-1.57079 -1.57079 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/pip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/pip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- pip -->
@@ -513,7 +513,7 @@
     <visual>
       <origin xyz="0.0211 -0.0084 0.0097" rpy="-3.14159 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/dip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/dip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- dip -->
@@ -556,7 +556,7 @@
     <visual>
       <origin xyz="0.0132 -0.0061 0.0145" rpy="3.14159 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/fingertip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/fingertip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- fingertip -->
@@ -580,7 +580,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/collision/white_tip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/collision/white_tip.obj"/>
       </geometry>
     </collision>
     <inertial>
@@ -589,7 +589,7 @@
       <inertia ixx="0.000003368" ixy="0.000000115" ixz="0" iyy="0.000001556" iyz="0" izz="0.000002863"/>
     </inertial>
   </link>
-  <joint name="8" type="revolute">
+  <joint name="ring_0" type="revolute">
     <origin xyz="-0.0122 0.0381 0.0145" rpy="-1.57079 0 1.57079"/>
     <parent link="mcp_joint_3"/>
     <child link="pip_3"/>
@@ -597,7 +597,7 @@
     <limit effort="0.95" velocity="8.48" lower="-1.047" upper="1.047"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="9" type="revolute">
+  <joint name="ring_1" type="revolute">
     <origin xyz="-0.00709 -0.0678 -0.0187" rpy="1.57079 1.57079 0"/>
     <parent link="palm_lower"/>
     <child link="mcp_joint_3"/>
@@ -605,7 +605,7 @@
     <limit effort="0.95" velocity="8.48" lower="-0.314" upper="2.23"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="10" type="revolute">
+  <joint name="ring_2" type="revolute">
     <origin xyz="0.015 0.0143 -0.013" rpy="1.57079 -1.57079 0"/>
     <parent link="pip_3"/>
     <child link="dip_3"/>
@@ -613,7 +613,7 @@
     <limit effort="0.95" velocity="8.48" lower="-0.506" upper="1.885"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="11" type="revolute">
+  <joint name="ring_3" type="revolute">
     <origin xyz="0 -0.03609 0.0002" rpy="0 0 0"/>
     <parent link="dip_3"/>
     <child link="fingertip_3"/>
@@ -625,7 +625,7 @@
     <visual>
       <origin xyz="-0.0053 0.0003 0.00078" rpy="-1.57079 -1.57079 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/pip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/pip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- pip -->
@@ -644,7 +644,7 @@
     <visual>
       <origin xyz="0.01196 0 -0.0158" rpy="1.57079 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/thumb_pip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/thumb_pip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- thumb_pip -->
@@ -675,7 +675,7 @@
     <visual>
       <origin xyz="0.0439 0.0579 -0.0086" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/thumb_dip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/thumb_dip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- thumb_dip -->
@@ -718,7 +718,7 @@
     <visual>
       <origin xyz="0.0625 0.0784 0.0489" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/visual/thumb_fingertip.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/visual/thumb_fingertip.obj"/>
       </geometry>
     </visual>
     <collision>     <!-- thumb_fingertip -->
@@ -742,7 +742,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find leap_description)/meshes/collision/white_tip_thumb.obj"/>
+        <mesh filename="file://$(find leap_description)/urdf/meshes/collision/white_tip_thumb.obj"/>
       </geometry>
     </collision>
     <inertial>
@@ -751,7 +751,7 @@
       <inertia ixx="0.000020372" ixy="-0.000000489" ixz="-0.00000003" iyy="0.000004336" iyz="-0.000000097" izz="0.000019845"/>
     </inertial>
   </link>
-  <joint name="12" type="revolute">
+  <joint name="thumb_0" type="revolute">
     <origin xyz="-0.0693 -0.0012 -0.0216" rpy="0 1.57079 0"/>
     <parent link="palm_lower"/>
     <child link="thumb_temp_base"/>
@@ -759,7 +759,7 @@
     <limit effort="0.95" velocity="8.48" lower="-0.349" upper="2.094"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="13" type="revolute">
+  <joint name="thumb_1" type="revolute">
     <origin xyz="0 0.0143 -0.013" rpy="1.57079 -1.57079 0"/>
     <parent link="thumb_temp_base"/>
     <child link="thumb_pip"/>
@@ -767,7 +767,7 @@
     <limit effort="0.95" velocity="8.48" lower="-0.47" upper="2.443"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="14" type="revolute">
+  <joint name="thumb_2" type="revolute">
     <origin xyz="0 0.0145 -0.017" rpy="-1.57079 0 0"/>
     <parent link="thumb_pip"/>
     <child link="thumb_dip"/>
@@ -775,7 +775,7 @@
     <limit effort="0.95" velocity="8.48" lower="-1.20" upper="1.90"/>
     <joint_properties friction="0.0"/>
   </joint>
-  <joint name="15" type="revolute">
+  <joint name="thumb_3" type="revolute">
     <origin xyz="0 0.0466 0.0002" rpy="0 0 3.14159"/>
     <parent link="thumb_dip"/>
     <child link="thumb_fingertip"/>

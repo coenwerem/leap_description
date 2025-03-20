@@ -4,7 +4,7 @@
   <name>leap_description</name>
   <version>0.0.0</version>
   <description>URDF description package for the LEAP anthropomorphic robotic gripper.</description>
-  <maintainer email="clintonenwerem@gmail.com">CLinton Enwerem</maintainer>
+  <maintainer email="clintonenwerem@gmail.com">Clinton Enwerem</maintainer>
   <license>BSD-3-Clause</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
